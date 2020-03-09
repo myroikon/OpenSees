@@ -3,6 +3,13 @@ include ../../../Makefile.def
 OBJS       = UniaxialMaterial.o \
 	ElasticMaterial.o \
 	Elastic2Material.o \
+	ElasticPowerFunc.o \
+	UVCuniaxial.o \
+	Bilin.o \
+	Bilin02.o \
+	IMKBilin.o \
+	IMKPeakOriented.o \
+	IMKPinching.o \
 	Steel2.o \
 	OriginCentered.o \
 	ConcretewBeta.o \
@@ -26,6 +33,7 @@ OBJS       = UniaxialMaterial.o \
 	BilinearOilDamper.o \
 	Cast.o \
         HardeningMaterial.o \
+        HardeningMaterial2.o \
 	Concrete01.o \
 	Concrete02Thermal.o \
 	Steel02Thermal.o \
@@ -60,8 +68,10 @@ OBJS       = UniaxialMaterial.o \
 	SteelMP.o \
 	SmoothPSConcrete.o \
 	Steel02.o \
+	Steel02Fatigue.o \
 	GNGMaterial.o \
 	Concrete02.o \
+	Concrete02IS.o \
 	Steel03.o \
 	MultiLinear.o \
 	HookGap.o \
@@ -115,6 +125,10 @@ OBJS       = UniaxialMaterial.o \
 	MaterialState.o \
 	OOHystereticMaterial.o \
 	SPSW02.o \
+	TDConcrete.o \
+	TDConcreteEXP.o \
+	TDConcreteMC10.o \
+	TDConcreteMC10NL.o \
         TclModelBuilderUniaxialMaterialCommand.o
 
 all:         $(OBJS)
